@@ -1,3 +1,4 @@
+import { Plus_Jakarta_Sans } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -9,9 +10,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+       primary: "#3563E9",
+       secondary:"#1A202C"
       },
+      fontFamily: {
+        plus_jakarta_sans : ["Plus_Jakarta_Sans"]
+      },
+      letterSpacing :{
+        "3pct" : "-3%"
+      }
     },
   },
   plugins: [],
